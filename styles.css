@@ -59,19 +59,32 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 20px 0;
+    padding: 0 10%; /* Add padding to create space from the sides */
 }
 
 
 .logo {
-    margin-left: 250px;
+    flex: 1;
 }
 
 /*#region Navigation*/
 nav ul {
     list-style-type: none;
-    margin-right: 250px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo, nav ul {
+        flex: none;
+        margin: 10px 0;
+    }
+}
+
 
 nav ul li {
     display: inline;
