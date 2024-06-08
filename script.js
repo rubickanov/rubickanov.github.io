@@ -1,5 +1,5 @@
 var pageName = window.location.pathname.split('/').pop();
-if (pageName === '') {
+if (pageName === 'index.html' || pageName === '') {
     pageName = 'home';
 }
 var navLink = document.getElementById(pageName);
