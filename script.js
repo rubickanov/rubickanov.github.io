@@ -1,4 +1,4 @@
-var pageName = window.location.pathname.split('/').pop().split('.')[0];
+var pageName = window.location.pathname.split('/').pop();
 if (pageName === '') {
     pageName = 'home';
 }
