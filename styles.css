@@ -9,6 +9,39 @@ body {
     color: black;
 }
 
+/* Styles for desktop */
+body {
+    padding: 50px;
+}
+
+/* Styles for tablet */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+}
+
+/* Styles for desktop */
+.column {
+    width: 50%;
+    float: left;
+}
+
+/* Styles for mobile */
+@media screen and (max-width: 480px) {
+    .column {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Styles for mobile */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+}
+
 html {
     margin: 0;
     padding: 0;
