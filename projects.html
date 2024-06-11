@@ -3,38 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubickanov - Projects</title>
+    <title>Projects - Rubickanov</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="img/icon.ico">
 </head>
 <body>
+<div class="wrapper">
 <header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/RUBICKANOV.png" alt="Rubickanov Logo" width="330" height="132">
+        </a>
+    </div>
     <nav>
         <ul>
-            <li><a id="home" href="index.html">Home</a></li>
-            <li><a id="about" href="about.html">About</a></li>
-            <li><a id="projects" href="projects.html">Projects</a></li>
-            <li><a id="contact" href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <h1>Projects by Rubickanov</h1>
-    <p>Here you can find a list of projects developed by Rubickanov. Stay tuned for more updates!</p>
+<section id="projects" class="section">
+    <h1>Projects</h1>
+    <div class="projects-list">
+        <!-- Example Project with Image -->
+        <div class="project">
+            <h2>Project Title 1</h2>
+            <img src="path/to/your/image.jpg" alt="Project Image">
+            <p>Project description goes here. Describe your project, its features, and technologies used.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+        <!-- Example Project with YouTube Video -->
+        <div class="project">
+            <h2>Project Title 2</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Project description goes here. Describe your project, its features, and technologies used.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</section>
 </main>
 <footer>
-    <p class="copyright">Rubickanov © 2024 </p>
+    <p>&copy; 2024 Rubickanov. All rights reserved.</p>
 </footer>
-<script src="script.js"></script>
+</div>
+<script src="scripts.js"></script>
 </body>
 </html>
-
-
-<!--    <ul>
-            <li><a id="home" href="/">Home</a></li>
-            <li><a id="about" href="/about">About</a></li>
-            <li><a id="projects" href="/projects">Projects</a></li>
-            <li><a id="contact" href="/contact">Contact</a></li>
-        </ul>
-
->
