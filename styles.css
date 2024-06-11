@@ -30,6 +30,12 @@ header {
     margin: 0 auto;
 }
 
+.logo:hover{
+    img {
+        filter: drop-shadow(0px 0px 10px greenyellow);
+    }
+}
+
 nav {
     margin-top: 0.5em; /* Reduced margin to make it closer to the logo */
 }
@@ -132,3 +138,9 @@ footer {
     width: 100%;
     border-top: 1px solid #444; /* Dark gray border */
 }
+
+.selected {
+    color: greenyellow;
+}
+
+
