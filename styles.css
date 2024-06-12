@@ -137,17 +137,9 @@ a:visited{
 }
 
 .video-container {
-    position: relative;
-    overflow: hidden;
-
-
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -191,4 +183,12 @@ footer p {
 
 .dropdown-button.open {
     transform: rotate(180deg);
+}
+
+.dropdown-content .view {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
