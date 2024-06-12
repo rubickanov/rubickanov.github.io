@@ -21,7 +21,7 @@ h1, h2 {
 header {
     padding: 1em 0;
     text-align: center;
-    border-bottom: 1px solid #444; /* Dark gray border */
+    /* border-bottom: 1px solid #444; /* Dark gray border */
 }
 
 .logo img {
@@ -59,12 +59,18 @@ nav ul li a {
     transition: color 0.3s;
 }
 
+nav ul li a.selected {
+    color: whitesmoke;
+}
+
 nav ul li a:hover {
     color: #ccc; /* Light gray on hover */
 }
 
 main {
     flex: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .section {
@@ -82,6 +88,11 @@ main {
     align-items: center;
 }
 
+iframe{
+
+    border: transparent;
+}
+
 .project {
     background-color: #222; /* Dark gray */
     margin: 1em 0;
@@ -90,6 +101,21 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     width: 100%;
     max-width: 600px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a:link{
+    color: greenyellow;
+}
+
+a:visited{
+    color: greenyellow;
 }
 
 .project img {
@@ -133,14 +159,15 @@ video-container iframe {
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #111; /* Very dark gray */
+    background-color: #000;
     color: #fff;
     width: 100%;
-    border-top: 1px solid #444; /* Dark gray border */
 }
 
-.selected {
-    color: greenyellow;
+footer p {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222;
+    border-radius: 50px;
+    color: #ccc;
 }
-
-
