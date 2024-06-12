@@ -165,3 +165,30 @@ footer p {
     border-radius: 50px;
     color: #ccc;
 }
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+}
+
+.dropdown-content.show {
+    max-height: 1000px; /* Adjust this value as needed */
+}
+
+.dropdown-button {
+    background: transparent;
+    border: none;
+    width: 64px;
+    height: 64px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-button .dropdown-image {
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-button.open {
+    transform: rotate(180deg);
+}
